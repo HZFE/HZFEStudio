@@ -14,7 +14,16 @@
   },
   "commitplease": {
     "nohook": true,
-    "components": ["Cors", "Docs", "Tests", "Build", "Fixed", "..."]
+    "components": [
+      "\\[Feat\\]",
+      "\\[Fix\\]",
+      "\\[Docs\\]",
+      "\\[Style\\]",
+      "\\[Refactor\\]",
+      "\\[Test\\]",
+      "\\[Chore\\]",
+      "\\[Wip\\]"
+    ]
   },
   "lint-staged": {
     "src/**/*.js": [
