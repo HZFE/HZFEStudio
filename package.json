@@ -13,7 +13,8 @@
     "commitmsg": "commitplease .git/COMMIT_EDITMSG"
   },
   "commitplease": {
-    "nohook": true
+    "nohook": true,
+    "components": ["Cors", "Docs", "Tests", "Build", "Fixed", "..."]
   },
   "lint-staged": {
     "src/**/*.js": [
