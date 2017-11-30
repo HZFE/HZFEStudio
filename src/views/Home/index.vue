@@ -4,6 +4,7 @@
     <TheMember/>
     <TheWorks/>
     <TheAboutUs/>
+    <TheFooter/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import TheFirstScreen from './components/TheFirstScreen.vue'
 import TheMember from './components/TheMember.vue'
 import TheWorks from './components/TheWorks.vue'
 import TheAboutUs from './components/TheAboutUs.vue'
+import TheFooter from './components/TheFooter.vue'
 
 export default {
   name: 'Home',
@@ -19,7 +21,8 @@ export default {
     TheFirstScreen,
     TheMember,
     TheWorks,
-    TheAboutUs
+    TheAboutUs,
+    TheFooter
   },
   data () {
     return {

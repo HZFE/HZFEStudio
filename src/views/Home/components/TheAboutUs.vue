@@ -1,8 +1,16 @@
 <template>
-  <section class="about-us">
-    <h1 class="name">
-      About us
-    </h1>
+  <section class="home-section about-us">
+    <header>
+      <div class="rect-skew_blue">
+        <h2>About</h2>
+      </div>
+    </header>
+    <section class="main">
+    
+    </section>
+    <footer>
+      
+    </footer>
   </section>
 </template>
 
@@ -22,11 +30,7 @@ export default {
   .about-us {
     height: 100vh;
     background-color: $blue;
-    @include flex-center;
-
-    .name {
-      font-size: 40px;
-      color: $blue-lighten;
-    }
+    @include flex-cross-center(flex, column);
+    justify-content: space-between;
   }
 </style>

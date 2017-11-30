@@ -1,7 +1,9 @@
 <template>
   <section class="works">
-    <header class="rect_green">
-      <h2>Works</h2>
+    <header>
+      <div class="rect_green">
+        <h2>Works</h2>
+      </div>  
     </header>
   </section>
 </template>

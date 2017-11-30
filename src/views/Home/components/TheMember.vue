@@ -1,8 +1,16 @@
 <template>
-  <section class="member">
-    <header class="rect-skew_brown">
-      <h2>Member</h2>
+  <section class="home-section member">
+    <header>
+      <div class="rect-skew_brown">
+        <h2>Member</h2>
+      </div>
     </header>
+    <section class="main">
+      Main
+    </section>
+    <footer>
+      <img src="static/img/Seedling.svg" alt="Seedling" aria-hidden="true">
+    </footer>
   </section>
 </template>
 
@@ -22,6 +30,7 @@ export default {
   .member {
     height: 100vh;
     background-color: $yellow;
-    text-align: center;
+    @include flex-cross-center(flex, column);
+    justify-content: space-between;
   }
 </style>
