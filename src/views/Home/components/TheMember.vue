@@ -1,8 +1,8 @@
 <template>
   <section class="member">
-    <h1 class="name">
-      Member
-    </h1>
+    <header class="rect-skew_brown">
+      <h2>Member</h2>
+    </header>
   </section>
 </template>
 
@@ -22,11 +22,6 @@ export default {
   .member {
     height: 100vh;
     background-color: $yellow;
-    @include flex-center;
-
-    .name {
-      font-size: 40px;
-      color: $brown;
-    }
+    text-align: center;
   }
 </style>
