@@ -1,10 +1,10 @@
 <template>
   <section class="first-screen">
-    <img class="svg_moon" src="static/img/Moon.svg" alt="">
+    <img class="svg_moon" src="static/img/Moon.svg" alt="Moon" aria-hidden="true">
     <h1 class="name logo">
       <span>HZFE</span>Studio
     </h1>
-    <img class="svg_montain svg_fullsize" src="static/img/Montain.svg" alt="">
+    <img class="svg_montain svg_fullsize" src="static/img/Montain.svg" alt="Montain" aria-hidden="true">
   </section>
 </template>
 
@@ -42,6 +42,7 @@ export default {
     flex: 1;
     &.svg_fullsize {
       height: 100%;
+      width: 100%;
     }
   }
 </style>

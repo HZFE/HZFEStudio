@@ -22,10 +22,31 @@
     background-color: $green;
     color: $green-lighten;
 }
-header[class^=rect] {
+[class$=blue] {
+    background-color: $blue-lighten;
+    color: $blue;
+}
+div[class^=rect] {
     display: inline-block;
     font-size: 30px;
+    padding: $gap-small $gap-big;
     h2 {
+        display: inline-block;
         font-weight: bolder;
+    }
+}
+
+.home-section {
+    .main {
+        flex: 1;
+    }
+    footer {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transform: translateY(1px);
+        }
     }
 }
