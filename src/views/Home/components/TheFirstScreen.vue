@@ -1,8 +1,10 @@
 <template>
   <section class="first-screen">
+    <img class="svg_moon" src="static/img/Moon.svg" alt="">
     <h1 class="name">
       <span>HZFE</span>Studio
     </h1>
+    <img class="svg_montain svg_fullsize" src="static/img/Montain.svg" alt="">
   </section>
 </template>
 
@@ -23,7 +25,8 @@ export default {
     height: 100vh;
     background-color: $blue;
     background-image: $blue-gradient;
-    @include flex-center;
+    @include flex-center(flex, column);
+    justify-content: space-between;
 
     .name {
       color: $white;
@@ -33,6 +36,12 @@ export default {
       span {
         font-weight: bolder;
       }
+    }
+  }
+  [class^=svg] {
+    flex: 1;
+    &.svg_fullsize {
+      height: 100%;
     }
   }
 </style>
