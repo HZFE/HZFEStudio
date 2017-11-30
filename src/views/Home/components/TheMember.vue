@@ -6,7 +6,7 @@
       </div>
     </header>
     <section class="main">
-      Main
+      
     </section>
     <footer>
       <img src="static/img/Seedling.svg" alt="Seedling" aria-hidden="true">
