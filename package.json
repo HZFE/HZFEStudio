@@ -22,7 +22,8 @@
       "\\[Refactor\\]",
       "\\[Test\\]",
       "\\[Chore\\]",
-      "\\[Wip\\]"
+      "\\[Wip\\]",
+      "\\[Conf\\]"
     ]
   },
   "lint-staged": {
