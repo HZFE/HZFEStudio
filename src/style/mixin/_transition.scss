@@ -1,3 +1,7 @@
+/**
+ * transition
+ */
+
 // bounce
 @mixin bounce($prefix: '', $enter_time: .5s, $leave_time: .2s) {
   .#{$prefix}bounce-enter-active {

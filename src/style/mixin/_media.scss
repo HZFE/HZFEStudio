@@ -1,3 +1,7 @@
+/**
+ * 媒体查询
+ */
+
 // max-width
 @mixin max-screen($res) {
   @media (max-width: $res) {
