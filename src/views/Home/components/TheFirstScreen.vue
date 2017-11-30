@@ -1,7 +1,7 @@
 <template>
   <section class="first-screen">
     <img class="svg_moon" src="static/img/Moon.svg" alt="">
-    <h1 class="name">
+    <h1 class="name logo">
       <span>HZFE</span>Studio
     </h1>
     <img class="svg_montain svg_fullsize" src="static/img/Montain.svg" alt="">

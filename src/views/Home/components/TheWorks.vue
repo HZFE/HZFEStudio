@@ -1,8 +1,8 @@
 <template>
   <section class="works">
-    <h1 class="name">
-      Works
-    </h1>
+    <header class="rect_green">
+      <h2>Works</h2>
+    </header>
   </section>
 </template>
 
@@ -22,11 +22,9 @@ export default {
   .works {
     height: 100vh;
     background-color: $green;
-    @include flex-center;
-
-    .name {
-      font-size: 40px;
-      color: $green-lighten;
-    }
+    text-align: center;
+  }
+  header {
+    padding: $gap-big 0;
   }
 </style>
