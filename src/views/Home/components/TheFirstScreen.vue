@@ -1,7 +1,7 @@
 <template>
   <section class="first-screen">
     <h1 class="name">
-      HZFE<span>Studio</span>
+      <span>HZFE</span>Studio
     </h1>
   </section>
 </template>
@@ -31,7 +31,7 @@ export default {
       line-height: 56px;
 
       span {
-        font-weight: lighter;
+        font-weight: bolder;
       }
     }
   }
