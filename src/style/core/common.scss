@@ -1,0 +1,31 @@
+/**
+* 通用样式
+*/
+@import '../theme/core';
+
+/* 色块 */
+[class^=rect] {
+    color: #fff;
+}
+[class*=skew] {
+    transform: skew(-20deg);
+    padding: $gap-small $gap-normal;
+    & > * {
+        transform: skew(20deg);
+    }
+}
+[class$=brown] {
+    background-color: $brown;
+    color: $yellow;
+}
+[class$=green] {
+    background-color: $green;
+    color: $green-lighten;
+}
+header[class^=rect] {
+    display: inline-block;
+    font-size: 30px;
+    h2 {
+        font-weight: bolder;
+    }
+}
