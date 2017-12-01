@@ -35,6 +35,12 @@ div[class^=rect] {
         font-weight: bolder;
     }
 }
+@media screen and (max-width: $media-ip6p-rotate) {
+    div[class^=rect] {
+        font-size: 18px;
+        padding: $gap-small $gap-normal;
+    }
+}
 
 .home-section {
     .main {

@@ -34,8 +34,9 @@ export default {
 
     .name {
       color: $white;
-      font-size: 40px;
-      line-height: 56px;
+      font-size: 50px;
+      line-height: 1;
+      padding: $gap-normal;
 
       span {
         font-weight: bolder;
@@ -46,8 +47,8 @@ export default {
     flex: 1;
     @include flex-center;
     &.svg_fullsize img {
-      min-height: 100%;
-      max-height: 100%;
+      height: 100%;
+      max-width: 100%;
       flex: 1
     }
   }

@@ -2,9 +2,7 @@
   <section class="footer">
     <div class="social">
     </div>
-    <div class="copyright">
-        © 2017 HZFEStudio 
-    </div>
+    <div class="copyright">© 2017 HZFEStudio</div>
   </section>
 </template>
 
