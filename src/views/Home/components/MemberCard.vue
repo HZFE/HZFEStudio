@@ -63,6 +63,7 @@ export default {
       font-size: 20px;
       font-weight: bolder;
       color: inherit;
+      word-break: break-all;
       margin-bottom: $gap-tiny;
     }
     p {
@@ -82,7 +83,7 @@ export default {
       }
     }
   }
-  @media screen and (max-width: $media-ip6p-rotate) {
+  @include max-screen($media-ip6p-rotate) {
     .memeber-card {
       flex-direction: column;
       padding: $gap-tiny;
@@ -101,9 +102,9 @@ export default {
       }
     }
   }
-  @media screen and (max-height: $media-ip6p) {
+  @include max-screen($media-ip6p) {
     .memeber-card {
-      width: 10%;
+      width: 20%;
       padding: $gap-tiny;
       ul {
         display: none;
