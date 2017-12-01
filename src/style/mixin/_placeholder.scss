@@ -7,6 +7,7 @@
     &::-moz-placeholder {
         color: $color;
         font-size: $font-size;
+        opacity: 1;
     }
     &:-ms-input-placeholder {
         color: $color;
