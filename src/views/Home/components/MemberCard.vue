@@ -6,7 +6,7 @@
       <p>{{ member.description }}</p>
     </section>
     <ul class="tags">
-      <li v-for="tag in member.tags">{{ `#${tag}` }}</li>
+      <li>{{ `#${member.tags[0]}` }}</li>
     </ul>
   </article>
 </template>
@@ -63,6 +63,7 @@ export default {
       font-size: 20px;
       font-weight: bolder;
       color: inherit;
+      word-break: break-all;
       margin-bottom: $gap-tiny;
     }
     p {
@@ -82,40 +83,35 @@ export default {
       }
     }
   }
-  @media screen and (max-width: $media-ip6p-rotate) {
+  @include max-screen($media-ipad-rotate) {
+      .memeber-card {
+        width: 30%;
+      }
+  }
+  @include max-screen($media-ip6p-rotate) {
     .memeber-card {
       flex-direction: column;
       padding: $gap-tiny;
+      width: auto;
       p {
         display: none;
       }
       img {
         margin-right: 0;
-        margin-bottom: $gap-tiny;
+        margin-bottom: 0;
       }
-      h4 {
-        font-size: 16px;
-      }
-      ul {
-        position: static;
-      }
-    }
-  }
-  @media screen and (max-height: $media-ip6p) {
-    .memeber-card {
-      width: 10%;
-      padding: $gap-tiny;
+      h4,
       ul {
         display: none;
       }
-      h4 {
-        line-height: 1.2;
-        background-color: $brown;
-        color: $yellow;
-        padding: 0 $gap-tiny;
-        border-radius: .5vw;
-        font-size: 12px;
-        margin-bottom: 0;
+    }
+  }
+  @include max-screen($media-ip6p) {
+    .memeber-card {
+      // width: 20%;
+      padding: $gap-tiny;
+      ul {
+        display: none;
       }
     }
   }

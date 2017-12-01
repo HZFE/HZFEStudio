@@ -19,6 +19,7 @@
 <script>
 import MemberCard from './MemberCard.vue'
 import memebers from '../../../members.json'
+
 export default {
   name: 'TheMember',
   components: {

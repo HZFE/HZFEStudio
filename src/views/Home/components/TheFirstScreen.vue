@@ -46,10 +46,23 @@ export default {
   [class^=svg] {
     flex: 1;
     @include flex-center;
-    &.svg_fullsize img {
-      height: 100%;
-      max-width: 100%;
-      flex: 1
+    &.svg_fullsize {
+      width: 100vw;
+      img {
+        height: 100%;
+        width: 800px;
+        max-width: 100%;
+      }
+    }
+  }
+  @include minmax-screen($media-ip5-rotate, 1000px) {
+    [class^=svg] {
+      &.svg_fullsize {
+        img {
+          height: 100%;
+          width: 60%;
+        }
+      }
     }
   }
 </style>
