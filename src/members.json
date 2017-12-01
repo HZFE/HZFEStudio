@@ -10,5 +10,12 @@
         "description": "Hzfe 最菜选手",
         "avatar": "https://avatars2.githubusercontent.com/u/13888962?s=460&v=4",
         "tags": ["前端"]
+    },
+    {
+        "name": "goodboy",
+        "description": "比铲铲腿毛少的男生",
+        "avatar": "https://avatars2.githubusercontent.com/u/15681693?s=460&v=4",
+        "blog": "blog.xyxiao.cn",
+        "tags": ["前端"]
     }
 ]
