@@ -34,8 +34,9 @@ export default {
 
     .name {
       color: $white;
-      font-size: 40px;
-      line-height: 56px;
+      font-size: 50px;
+      line-height: 1;
+      padding: $gap-normal;
 
       span {
         font-weight: bolder;

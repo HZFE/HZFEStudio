@@ -31,12 +31,13 @@ export default {
     padding: $gap-small;
     width: 20%;
     color: $brown;
-    margin: $gap-small;
+    margin: $gap-tiny;
     font-weight: bolder;
     position: relative;
     border: 1px solid transparent;
     .content {
       flex: 1;
+      min-width: 0;
     }
     ul {
       list-style: none;
@@ -66,6 +67,10 @@ export default {
     }
     p {
       font-size: 12px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      min-width: 0;
     }
     &:hover {
       border-color: $brown;
@@ -74,6 +79,43 @@ export default {
       transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
       img {
         border-color: $brown;
+      }
+    }
+  }
+  @media screen and (max-width: $media-ip6p-rotate) {
+    .memeber-card {
+      flex-direction: column;
+      padding: $gap-tiny;
+      p {
+        display: none;
+      }
+      img {
+        margin-right: 0;
+        margin-bottom: $gap-tiny;
+      }
+      h4 {
+        font-size: 16px;
+      }
+      ul {
+        position: static;
+      }
+    }
+  }
+  @media screen and (max-height: $media-ip6p) {
+    .memeber-card {
+      width: 10%;
+      padding: $gap-tiny;
+      ul {
+        display: none;
+      }
+      h4 {
+        line-height: 1.2;
+        background-color: $brown;
+        color: $yellow;
+        padding: 0 $gap-tiny;
+        border-radius: .5vw;
+        font-size: 12px;
+        margin-bottom: 0;
       }
     }
   }

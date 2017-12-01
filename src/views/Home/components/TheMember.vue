@@ -119,5 +119,6 @@ export default {
     @include flex-center;
     flex-wrap: wrap;
     align-content: center;
+    padding: 0 $gap-small;
   }
 </style>
