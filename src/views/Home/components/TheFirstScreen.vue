@@ -6,9 +6,7 @@
     <h1 class="name logo">
       <span>HZFE</span>Studio
     </h1>
-    <div class="svg_montain svg_fullsize">
-      <img src="static/img/Montain.svg" alt="Montain" aria-hidden="true">
-    </div>
+    <div class="svg_montain"></div>
   </section>
 </template>
 
@@ -54,6 +52,11 @@ export default {
         max-width: 100%;
       }
     }
+  }
+  .svg_montain {
+    width: 100vw;
+    background: url('~static/img/Montain.svg') center bottom no-repeat;
+    background-size: contain;
   }
   @include minmax-screen($media-ip5-rotate, 1000px) {
     [class^=svg] {
