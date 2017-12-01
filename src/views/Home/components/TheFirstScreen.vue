@@ -46,8 +46,8 @@ export default {
     flex: 1;
     @include flex-center;
     &.svg_fullsize img {
-      min-height: 100%;
-      max-height: 100%;
+      height: 100%;
+      max-width: 100%;
       flex: 1
     }
   }
