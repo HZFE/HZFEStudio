@@ -6,7 +6,7 @@
       </div>
     </header>
     <section class="main">
-      <template v-for="member in members">
+      <template v-for="member in members" v-if="members">
         <MemberCard :member="member"></MemberCard>
       </template>
     </section>
@@ -18,7 +18,7 @@
 
 <script>
 import MemberCard from './MemberCard.vue'
-
+import memebers from '../../../members.json'
 export default {
   name: 'TheMember',
   components: {
@@ -26,80 +26,7 @@ export default {
   },
   data () {
     return {
-      members: [
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        },
-        {
-          name: '树',
-          description: '描述描述描述描述描述描述',
-          avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-          tags: ['前端']
-        }
-      ]
+      members: memebers
     }
   }
 }
