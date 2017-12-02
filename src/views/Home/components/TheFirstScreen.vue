@@ -54,7 +54,7 @@ export default {
     }
   }
   .svg_montain {
-    width: 100vw;
+    width: 100%;
     background: url('~static/img/Montain.svg') center bottom no-repeat;
     background-size: contain;
   }

@@ -83,9 +83,14 @@ export default {
       }
     }
   }
-  @include min-screen(1920px) {
+  @include min-screen(1440px) {
     .memeber-card {
       width: 20%;
+    }
+  }
+  @include min-screen(1920px) {
+    .memeber-card {
+      width: 16.6666%;
     }
   }
   @include max-screen($media-ipad-rotate) {
