@@ -41,5 +41,11 @@
         "description": "不会谈恋爱的小垃圾",
         "avatar": "https://avatars2.githubusercontent.com/u/19499958?s=460&v=4",
         "tags": ["前端"]
+    },
+    {
+        "name": "鱼",
+        "description": "HZFE最菜前端",
+        "avatar": "https://avatars2.githubusercontent.com/u/7876498",
+        "tags": ["前端"]
     }
 ]
