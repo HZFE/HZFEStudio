@@ -53,5 +53,10 @@
         "description": "HZFE后端开饭",
         "avatar": "https://avatars1.githubusercontent.com/u/14918579?v=4&s=400",
         "tags": ["Nodejs", "不会前端", "兔子先生"]
-    }
+    }, {
+        "name": "小k",
+        "description": "每天写bug的小kk",
+        "avatar": "https://avatars3.githubusercontent.com/u/12165373?s=460&v=4",
+        "tags": ["前端"]
+     }
 ]
