@@ -1,0 +1,58 @@
+/**
+* 通用样式
+*/
+@import '../theme/core';
+
+/* 色块 */
+[class^=rect] {
+    color: #fff;
+}
+[class*=skew] {
+    transform: skew(-20deg);
+    padding: $gap-small $gap-normal;
+    & > * {
+        transform: skew(20deg);
+    }
+}
+[class$=brown] {
+    background-color: $brown;
+    color: $yellow;
+}
+[class$=green] {
+    background-color: $green;
+    color: $green-lighten;
+}
+[class$=blue] {
+    background-color: $blue-lighten;
+    color: $blue;
+}
+div[class^=rect] {
+    display: inline-block;
+    font-size: 30px;
+    padding: $gap-small $gap-big;
+    h2 {
+        display: inline-block;
+        font-weight: bolder;
+    }
+}
+@media screen and (max-width: $media-ip6p-rotate) {
+    div[class^=rect] {
+        font-size: 18px;
+        padding: $gap-small $gap-normal;
+    }
+}
+
+.home-section {
+    .main {
+        flex: 1;
+    }
+    footer {
+        width: 100%;
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transform: translateY(1px);
+        }
+    }
+}
