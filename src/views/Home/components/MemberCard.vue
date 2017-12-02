@@ -31,7 +31,7 @@ export default {
     padding: $gap-small;
     width: 25%;
     color: $brown;
-    // margin: $gap-tiny;
+    margin: $gap-small $gap-tiny;
     font-weight: bolder;
     position: relative;
     border: 1px solid transparent;
