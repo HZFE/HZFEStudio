@@ -2,15 +2,21 @@
   <section class="footer">
     <div class="social">
     </div>
-    <div class="copyright">© 2017 HZFEStudio</div>
+    <div class="copyright">© 2017 HZFEStudio 已成立{{ establishedDays }}天</div>
   </section>
 </template>
 
 <script>
 export default {
   name: 'TheFooter',
-  data () {
-    return {
+
+  computed: {
+    establishedDays () {
+      const birthday = new Date('2016-09-14')
+      const nowTime = new Date()
+      const day2Msec = 24 * 60 * 60 * 1000
+
+      return Math.round((nowTime - birthday) / day2Msec)
     }
   }
 }

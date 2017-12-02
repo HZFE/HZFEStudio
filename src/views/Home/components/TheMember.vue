@@ -5,10 +5,8 @@
         <h2>Member</h2>
       </div>
     </header>
-    <section class="main">
-      <template v-for="member in members" v-if="members">
-        <MemberCard :member="member"></MemberCard>
-      </template>
+    <section class="main" v-if="members">
+      <MemberCard v-for="(member, index) in members" :key="index" :member="member"></MemberCard>
     </section>
     <footer>
       <img src="static/img/Seedling.svg" alt="Seedling" aria-hidden="true">
