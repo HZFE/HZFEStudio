@@ -47,5 +47,11 @@
         "description": "HZFE最菜前端",
         "avatar": "https://avatars2.githubusercontent.com/u/7876498",
         "tags": ["前端"]
+    },
+    {
+        "name": "兔",
+        "description": "HZFE后端开饭",
+        "avatar": "https://avatars2.githubusercontent.com/u/7876498",
+        "tags": ["Nodejs", "不会前端", "兔子先生"]
     }
 ]
