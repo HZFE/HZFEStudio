@@ -47,6 +47,6 @@ export default {
     @include flex-center;
     flex-wrap: wrap;
     align-content: center;
-    padding: 0 $gap-small;
+    padding: 0 5vw;
   }
 </style>
