@@ -83,5 +83,11 @@
         "description": "研er",
         "avatar": "https://avatars0.githubusercontent.com/u/17242380?s=460&v=4",
         "tags": ["前端"]
+    },
+    {
+        "name": "daryl",
+        "description": "我可能是群里最菜的",
+        "avatar": "https://o90cnn3g2.qnssl.com/8393e7f0c94e11e79b2a57d944c1527b1.jpg",
+        "tags": ["后台", "我真的不会前端啊"]
     }
 ]
