@@ -48,5 +48,15 @@ export default {
     flex-wrap: wrap;
     align-content: center;
     padding: 0 5vw;
+
+    &::after {
+      content: '';
+      flex: 1;
+    }
+  }
+  @include max-screen($media-ip6p) {
+    .main::after {
+      display: none;
+    }
   }
 </style>

@@ -31,7 +31,7 @@ export default {
     padding: $gap-small;
     width: 25%;
     color: $brown;
-    margin: $gap-small $gap-tiny;
+    // margin: $gap-small $gap-tiny;
     font-weight: bolder;
     position: relative;
     border: 1px solid transparent;
@@ -83,9 +83,14 @@ export default {
       }
     }
   }
+  @include min-screen(1920px) {
+    .memeber-card {
+      width: 20%;
+    }
+  }
   @include max-screen($media-ipad-rotate) {
       .memeber-card {
-        width: 30%;
+        width: 33.3333%;
       }
   }
   @include max-screen($media-ip6p-rotate) {
