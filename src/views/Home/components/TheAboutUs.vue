@@ -1,10 +1,5 @@
 <template>
   <section class="home-section about-us">
-    <!--<header>
-      <div class="rect-skew_blue">
-        <h2>About</h2>
-      </div>
-    </header>-->
     <section class="main">
       <article class="animate-container"
                ref="animateContainer">
@@ -58,6 +53,17 @@ export default {
     background-color: $blue;
     @include flex-cross-center(flex, column);
     justify-content: space-between;
+    &::before {
+      content: 'About';
+      @include flex-center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      font-size: 22vw;
+      font-weight: bold;
+      color: $blue-lighten;
+      opacity: 0.2;
+    }
     .animate-container {
       position: absolute;
       top: -182px;
