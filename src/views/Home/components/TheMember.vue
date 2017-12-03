@@ -13,7 +13,7 @@
     <footer>
       <img src="static/img/Seedling.svg" alt="Seedling" aria-hidden="true">
     </footer>
-    <section class="detail" v-if="true || showDetail && member">
+    <section class="detail" v-if="showDetail && member">
       <img :src="member.avatar" :alt="member.name" class="avatar">
       <h3>{{ member.name }}</h3>
       <ul>
