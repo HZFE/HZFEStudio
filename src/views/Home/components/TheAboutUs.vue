@@ -36,7 +36,7 @@ export default {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: 'src/fish.json'
+        path: '/static/fish.json'
       }
       Bodymovin.loadAnimation(animateConfig)
     }
