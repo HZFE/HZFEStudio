@@ -45,6 +45,8 @@ div[class^=rect] {
 .home-section {
     .main {
         flex: 1;
+        width: 100%;
+        position: relative;
     }
     footer {
         width: 100%;
