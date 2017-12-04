@@ -35,6 +35,7 @@ export default {
       font-size: 50px;
       line-height: 1;
       padding: $gap-normal;
+      font-weight: lighter;
 
       span {
         font-weight: bolder;

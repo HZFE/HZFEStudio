@@ -67,6 +67,7 @@ export default {
     .animate-container {
       position: absolute;
       width: 35vw;
+      max-width: 260px;
       top: 0;
       left: 50%;
       transform: translate(-50%, -52%);
