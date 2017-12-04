@@ -9,6 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
+const SWPrecachePlugin  = require('sw-precache-webpack-plugin')
 
 const env = require('../config/prod.env')
 
@@ -112,7 +113,18 @@ const webpackConfig = merge(baseWebpackConfig, {
         to: config.build.assetsSubDirectory,
         ignore: ['.*']
       }
-    ])
+    ]),
+
+    // Generate service worker file
+    new SWPrecachePlugin({
+      cacheId: 'hzfe.org',
+      filename: 'sw.js',
+      dontCacheBustUrlsMatching: false,
+      // minify: true,
+      staticFileGlobsIgnorePatterns: [
+        /\.map$/,
+      ]
+    })
   ]
 })
 

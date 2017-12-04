@@ -1,0 +1,20 @@
+{
+  "name": "HZFEStudio",
+  "short_name": "HZFE",
+  "lang": "cn",
+  "description": "HZFEStudio",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "splash_pages": null
+}
