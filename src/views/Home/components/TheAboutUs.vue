@@ -63,8 +63,8 @@ export default class TheAboutUs extends Vue {
     }
     .animate-container {
       position: absolute;
-      width: 35vw;
-      max-width: 260px;
+      width: 80vw;
+      max-width: 500px;
       top: 0;
       left: 50%;
       transform: translate(-50%, -52%);
