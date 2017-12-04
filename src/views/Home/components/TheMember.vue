@@ -27,26 +27,24 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 import MemberCard from './MemberCard.vue'
-import memebers from '../../../members.json'
+import memebers from '@/members.json'
 
-export default {
-  name: 'TheMember',
+@Component({
   components: {
     MemberCard
-  },
-  data () {
-    return {
-      members: memebers,
-      member: {
-        name: '树',
-        description: '你猜我是不是树',
-        avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
-        tags: ['前端']
-      },
-      showDetail: false
-    }
+  }
+})
+export default class TheMember extends Vue {
+  showDetail = false
+  members = memebers
+  member = {
+    name: '树',
+    description: '你猜我是不是树',
+    avatar: 'https://avatars2.githubusercontent.com/u/3984824?s=460&v=4',
+    tags: ['前端']
   }
 }
 </script>

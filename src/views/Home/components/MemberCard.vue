@@ -11,14 +11,15 @@
   </article>
 </template>
 
-<script>
-export default {
-  name: 'MemberCard',
-  props: ['member'],
-  data () {
-    return {
-    }
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+
+@Component({
+  props: {
+    member: Object
   }
+})
+export default class MemberCard extends Vue {
 }
 </script>
 

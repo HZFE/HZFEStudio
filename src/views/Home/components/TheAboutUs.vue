@@ -11,35 +11,32 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 import Bodymovin from 'bodymovin'
-export default {
-  name: 'TheAboutUs',
-  data () {
-    return {
-    }
-  },
-  methods: {
-    init_fishAnimate () {
-      /**
-       * 鲤鱼打挺(x
-       * @author goodhome update(2017/12/3)
-       * */
-      let animateContainer = this.$refs.animateContainer
-      let animateConfig = {
-        container: animateContainer,
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: '/static/fish.json'
-      }
-      Bodymovin.loadAnimation(animateConfig)
-    }
-  },
+
+@Component({})
+export default class TheAboutUs extends Vue {
   created () {
     this.$nextTick(() => {
-      this.init_fishAnimate()
+      this.initFishAnimate()
     })
+  }
+
+  initFishAnimate () {
+    /**
+     * 鲤鱼打挺(x
+     * @author goodhome update(2017/12/3)
+     * */
+    let animateContainer = this.$refs.animateContainer
+    let animateConfig = {
+      container: animateContainer,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '/static/fish.json'
+    }
+    Bodymovin.loadAnimation(animateConfig)
   }
 }
 </script>
