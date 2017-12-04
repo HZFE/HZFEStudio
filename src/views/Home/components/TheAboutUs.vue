@@ -31,10 +31,10 @@ export default class TheAboutUs extends Vue {
     let animateContainer = this.$refs.animateContainer
     let animateConfig = {
       container: animateContainer,
-      renderer: 'svg',
+      renderer: 'canvas',
       loop: true,
       autoplay: true,
-      path: '/static/fish.json'
+      path: 'static/fish.json'
     }
     Bodymovin.loadAnimation(animateConfig)
   }
