@@ -65,11 +65,11 @@ export default {
       opacity: 0.2;
     }
     .animate-container {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        transform: translateY(-52%);
+      position: absolute;
+      width: 35vw;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -52%);
     }
   }
 </style>
