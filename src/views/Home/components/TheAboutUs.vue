@@ -31,7 +31,7 @@ export default class TheAboutUs extends Vue {
     let animateContainer = this.$refs.animateContainer
     let animateConfig = {
       container: animateContainer,
-      renderer: 'canvas',
+      renderer: 'svg',
       loop: true,
       autoplay: true,
       path: 'static/fish.json'
@@ -63,8 +63,8 @@ export default class TheAboutUs extends Vue {
     }
     .animate-container {
       position: absolute;
-      width: 80vw;
-      max-width: 500px;
+      width: 100%;
+      max-width: 260px;
       top: 0;
       left: 50%;
       transform: translate(-50%, -52%);
