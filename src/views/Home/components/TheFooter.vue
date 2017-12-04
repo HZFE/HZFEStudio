@@ -6,18 +6,17 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'TheFooter',
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
 
-  computed: {
-    establishedDays () {
-      const birthday = new Date('2016-09-14')
-      const nowTime = new Date()
-      const day2Msec = 24 * 60 * 60 * 1000
+@Component({})
+export default class TheFooter extends Vue {
+  get establishedDays () {
+    const birthday = +new Date('2016-09-14')
+    const nowTime = +new Date()
+    const day2Msec = 24 * 60 * 60 * 1000
 
-      return Math.round((nowTime - birthday) / day2Msec)
-    }
+    return Math.round((nowTime - birthday) / day2Msec)
   }
 }
 </script>

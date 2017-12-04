@@ -10,13 +10,11 @@
   </section>
 </template>
 
-<script>
-export default {
-  name: 'TheFirstScreen',
-  data () {
-    return {
-    }
-  }
+<script lang="ts">
+import { Vue, Component } from 'vue-property-decorator'
+
+@Component({})
+export default class TheFirstScreen extends Vue {
 }
 </script>
 
