@@ -1,16 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-Hans">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>hzfe</title>
+    <title>HZFEStudio</title>
+    <meta name="theme-color" content="#2066C2">
+    <link rel="manifest" href="static/manifest.json" />
   </head>
   <body>
+    <noscript>Oops, Please Enable JavaScript.</noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('static/sw.js', {scope: '/'})
+        navigator.serviceWorker.register('sw.js', {scope: '/'})
           .then(function(reg) {
             console.log('HZFEStudio sw started! ⸜(* ॑꒳ ॑* )⸝');
           }).catch(function(error) {
