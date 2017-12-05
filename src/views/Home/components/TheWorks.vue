@@ -67,37 +67,53 @@ export default class TheWorks extends Vue {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 900;
     .cover {
       // min-width: 200px;
       text-align: center;
       flex: 0 0;
       padding: 5px;
-      
-      a {
-        background: $green-lighten;
-        display: block;
-        height: 100%;
-        position: relative;
-        padding: $gap-small;
-        text-decoration: none;
-        outline: 2px dashed $green;
-        outline-offset: -8px;
-        &:hover {
-          outline-style: solid;
-        }
+    }
+    a {
+      background: $green-lighten;
+      display: block;
+      height: 100%;
+      position: relative;
+      padding: $gap-small;
+      text-decoration: none;
+      outline: 2px dashed $green;
+      outline-offset: -8px;
+      &:hover {
+        outline-style: solid;
+      }
+    }
+    span {
+      position: relative;
+      display: block;
+      top: 50%;
+      transform: translateY(-50%);
+      color: $green;
+      padding: $gap-small;
+      white-space: nowrap;
+    }
+  }
+  @include max-screen($media-ip6p-rotate) {
+    header {
+      padding: $gap-small 0;
+    }
+    nav {
+      font-size: 12px;
+      font-weight: 300;
+      .cover {
+        padding: 2px;
       }
       span {
-        position: relative;
-        display: block;
-        // width: 100%;
-        // left: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        color: $green;
-        font-size: 20px;
-        font-weight: 900;
-        padding: $gap-small;
-        white-space: nowrap;
+        padding: $gap-tiny;
+      }
+      a {
+        outline-width: 1px;
+        outline-offset: -4px;
       }
     }
   }
