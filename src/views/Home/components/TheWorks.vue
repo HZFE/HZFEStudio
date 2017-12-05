@@ -1,5 +1,15 @@
 <template>
   <section class="works">
+    <header>
+      <div class="rect-skew_green">
+        <h2>Works</h2>
+      </div>
+    </header>
+    <nav>
+      <div class="cover" v-for="(url, name) in worksList">
+        <a :href="url"><span>{{ name.toUpperCase() }}</span></a>
+      </div>
+    </nav>
   </section>
 </template>
 
@@ -8,6 +18,18 @@ import { Vue, Component } from 'vue-property-decorator'
 
 @Component({})
 export default class TheWorks extends Vue {
+  worksList = {
+    'hzfe': 'https://github.com/HZFE/hzfe',
+    'memes-singleDog': 'https://github.com/merrynode/memes-singleDog',
+    'hzfeTelegramBot': 'https://github.com/HZFE/hzfeTelegramBot',
+    'everyone': 'https://github.com/Yiiu/everyone',
+    'hzfe-questions-and-answers': 'https://github.com/Akiq2016/hzfe-questions-and-answers',
+    'php-aplayer': 'https://github.com/Daryl-L/php-aplayer',
+    'bohu-jekyll-theme': 'https://github.com/LLawlight/bohu-jekyll-theme',
+    'vue-slider-component': 'https://github.com/NightCatSama/vue-slider-component',
+    'vue-cropper': 'https://github.com/xyxiao001/vue-cropper',
+    'VueMusic-PC': 'https://github.com/Reusjs/VueMusic-PC'
+  }
 }
 </script>
 
@@ -20,7 +42,7 @@ export default class TheWorks extends Vue {
     background-color: $green;
     text-align: center;
     &::before {
-      content: 'Works';
+      // content: 'Works';
       @include flex-center;
       position: absolute;
       width: 100%;
@@ -33,5 +55,50 @@ export default class TheWorks extends Vue {
   }
   header {
     padding: $gap-big 0;
+  }
+  nav {
+    @include flex-center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    // justify-content: flex-start;
+    width: 90%;
+    height: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .cover {
+      // min-width: 200px;
+      text-align: center;
+      flex: 0 0;
+      padding: 5px;
+      
+      a {
+        background: $green-lighten;
+        display: block;
+        height: 100%;
+        position: relative;
+        padding: $gap-small;
+        text-decoration: none;
+        outline: 2px dashed $green;
+        outline-offset: -8px;
+        &:hover {
+          outline-style: solid;
+        }
+      }
+      span {
+        position: relative;
+        display: block;
+        // width: 100%;
+        // left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $green;
+        font-size: 20px;
+        font-weight: 900;
+        padding: $gap-small;
+        white-space: nowrap;
+      }
+    }
   }
 </style>
