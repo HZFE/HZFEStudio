@@ -7,7 +7,7 @@
     </header>
     <nav>
       <div class="cover" v-for="(url, name) in worksList">
-        <a :href="url"><span>{{ name.toUpperCase() }}</span></a>
+        <a :href="url" target="_blank"><span>{{ name.toUpperCase() }}</span></a>
       </div>
     </nav>
   </section>
