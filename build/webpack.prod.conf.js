@@ -120,10 +120,25 @@ const webpackConfig = merge(baseWebpackConfig, {
       cacheId: 'hzfe.org',
       filename: 'sw.js',
       dontCacheBustUrlsMatching: false,
-      // minify: true,
       staticFileGlobsIgnorePatterns: [
         /\.map$/,
-      ]
+      ],
+      runtimeCaching: [{
+        urlPattern: /^https:\/\/avatars[0-9]\.githubusercontent\.com/,
+        handler: 'cacheFirst'
+      }, {
+        urlPattern: /^https:\/\/o90cnn3g2\.qnssl\.com/,
+        handler: 'cacheFirst'
+      }, {
+        urlPattern: /\.(png|jpg|webp|gif)/,
+        handler: 'cacheFirst',
+        options: {
+          cache: {
+            maxEntries: 20,
+            name: 'pics-cache'
+          }
+        }
+      }]
     })
   ]
 })
