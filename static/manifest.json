@@ -4,7 +4,7 @@
   "lang": "cn",
   "description": "HZFEStudio",
   "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "background_color": "#fff",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",
