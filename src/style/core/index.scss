@@ -1,6 +1,6 @@
-@import '../theme/core';
-@import '../mixin/core';
-@import 'normalize';
-@import 'base';
-@import 'transition';
-@import 'common';
+@import '../theme/_core';
+@import '../mixin/_core';
+@import './normalize';
+@import './base';
+@import './transition';
+@import './common';

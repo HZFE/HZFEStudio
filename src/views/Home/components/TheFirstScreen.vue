@@ -10,16 +10,13 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-
-@Component({})
-export default class TheFirstScreen extends Vue {
+<script>
+export default {
 }
 </script>
 
 <style scoped lang="scss">
-  @import '~style';
+  @import './src/style/index.scss';
 
   .first-screen {
     height: 100vh;

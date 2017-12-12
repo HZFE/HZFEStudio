@@ -6,11 +6,8 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-
-@Component({})
-export default class TheFooter extends Vue {
+<script>
+export default {
   get establishedDays () {
     const birthday = +new Date('2016-09-14')
     const nowTime = +new Date()
@@ -19,10 +16,10 @@ export default class TheFooter extends Vue {
     return Math.round((nowTime - birthday) / day2Msec)
   }
 }
-</script>
+</script> 
 
 <style scoped lang="scss">
-  @import '~style';
+  @import './src/style/index.scss';
 
   .footer {
     background-color: $blue-ink;

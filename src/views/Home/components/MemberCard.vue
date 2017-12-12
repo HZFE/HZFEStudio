@@ -11,20 +11,16 @@
   </article>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-
-@Component({
+<script>
+export default {
   props: {
     member: Object
   }
-})
-export default class MemberCard extends Vue {
 }
 </script>
 
 <style scoped lang="scss">
-  @import '~style';
+  @import './src/style/index.scss';
 
   .memeber-card {
     border-radius: .8vw;

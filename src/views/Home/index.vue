@@ -3,29 +3,26 @@
     <TheFirstScreen/>
     <TheMember/>
     <TheWorks/>
-    <TheAboutUs/>
+    <TheAbout/>
     <TheFooter/>
   </main>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
+<script>
 import TheFirstScreen from './components/TheFirstScreen.vue'
 import TheMember from './components/TheMember.vue'
 import TheWorks from './components/TheWorks.vue'
-import TheAboutUs from './components/TheAboutUs.vue'
+import TheAbout from './components/TheAbout.vue'
 import TheFooter from './components/TheFooter.vue'
 
-@Component({
+export default {
   components: {
     TheFirstScreen,
     TheMember,
     TheWorks,
-    TheAboutUs,
+    TheAbout,
     TheFooter
   }
-})
-export default class Home extends Vue {
 }
 </script>
 

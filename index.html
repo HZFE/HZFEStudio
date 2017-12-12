@@ -11,16 +11,6 @@
     <noscript>Oops, Please Enable JavaScript.</noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
-    <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js', {scope: '/'})
-          .then(function(reg) {
-            console.log('HZFEStudio sw started! ⸜(* ॑꒳ ॑* )⸝');
-          }).catch(function(error) {
-            // registration failed
-            console.log('Registration failed ・゜・(PД`q｡)・゜・ ');
-          });
-      }
-    </script>
+    <script src="./src/main.js"></script>
   </body>
 </html>

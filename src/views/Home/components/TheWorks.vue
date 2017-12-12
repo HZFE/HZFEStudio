@@ -13,28 +13,29 @@
   </section>
 </template>
 
-<script lang="ts">
-import { Vue, Component } from 'vue-property-decorator'
-
-@Component({})
-export default class TheWorks extends Vue {
-  worksList = {
-    'hzfe': 'https://github.com/HZFE/hzfe',
-    'memes-singleDog': 'https://github.com/merrynode/memes-singleDog',
-    'hzfeTelegramBot': 'https://github.com/HZFE/hzfeTelegramBot',
-    'everyone': 'https://github.com/Yiiu/everyone',
-    'hzfe-questions-and-answers': 'https://github.com/Akiq2016/hzfe-questions-and-answers',
-    'php-aplayer': 'https://github.com/Daryl-L/php-aplayer',
-    'bohu-jekyll-theme': 'https://github.com/LLawlight/bohu-jekyll-theme',
-    'vue-slider-component': 'https://github.com/NightCatSama/vue-slider-component',
-    'vue-cropper': 'https://github.com/xyxiao001/vue-cropper',
-    'VueMusic-PC': 'https://github.com/Reusjs/VueMusic-PC'
+<script>
+export default {
+  data () {
+    return {
+      worksList: {
+        'hzfe': 'https://github.com/HZFE/hzfe',
+        'memes-singleDog': 'https://github.com/merrynode/memes-singleDog',
+        'hzfeTelegramBot': 'https://github.com/HZFE/hzfeTelegramBot',
+        'everyone': 'https://github.com/Yiiu/everyone',
+        'hzfe-questions-and-answers': 'https://github.com/Akiq2016/hzfe-questions-and-answers',
+        'php-aplayer': 'https://github.com/Daryl-L/php-aplayer',
+        'bohu-jekyll-theme': 'https://github.com/LLawlight/bohu-jekyll-theme',
+        'vue-slider-component': 'https://github.com/NightCatSama/vue-slider-component',
+        'vue-cropper': 'https://github.com/xyxiao001/vue-cropper',
+        'VueMusic-PC': 'https://github.com/Reusjs/VueMusic-PC'
+      }
+    }
   }
 }
 </script>
 
 <style scoped lang="scss">
-  @import '~style';
+  @import './src/style/index.scss';
 
   .works {
     position: relative;
