@@ -19,8 +19,8 @@ export default class TheFooter extends Vue {
     return Math.round((nowTime - birthday) / day2Msec)
   }
   get year () {
-    const year = new Date().getFullYear()
-    return year
+    const yearNow = new Date().getFullYear()
+    return yearNow
   }
 }
 </script>
