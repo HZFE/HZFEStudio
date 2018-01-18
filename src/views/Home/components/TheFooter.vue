@@ -2,7 +2,7 @@
   <section class="footer">
     <div class="social">
     </div>
-    <div class="copyright">© 2017 HZFEStudio 已成立{{ establishedDays }}天</div>
+    <div class="copyright">© {{ year }} HZFEStudio 已成立{{ establishedDays }}天</div>
   </section>
 </template>
 
@@ -17,6 +17,10 @@ export default class TheFooter extends Vue {
     const day2Msec = 24 * 60 * 60 * 1000
 
     return Math.round((nowTime - birthday) / day2Msec)
+  }
+  get year () {
+    const yearNow = new Date().getFullYear()
+    return yearNow
   }
 }
 </script>
