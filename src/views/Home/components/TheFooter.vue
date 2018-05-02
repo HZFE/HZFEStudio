@@ -1,6 +1,8 @@
 <template>
   <section class="footer">
     <div class="social">
+      <Icon name="weibo" href="https://weibo.com/hzfestudio" class="icons"/>  
+      <Icon name="github" href="https://github.com/hzfe" class="icons"/>  
     </div>
     <div class="copyright">© {{ year }} HZFEStudio 已成立{{ establishedDays }}天</div>
   </section>
@@ -8,8 +10,11 @@
 
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator'
+import Icon from './Icon.vue'
 
-@Component({})
+@Component({
+  components: { Icon }
+})
 export default class TheFooter extends Vue {
   get establishedDays () {
     const birthday = +new Date('2016-09-14')
@@ -38,15 +43,15 @@ export default class TheFooter extends Vue {
     font-size: 14px;
   }
   .social {
-      a {
-          display: inline-block;
-          width: 40px;
-          height: 40px;
-      }
-      img {
-          width: 100%;
-          height: auto;
-          fill: currentColor;
-      }
+    display: flex;
+    align-items: center;
+  }
+  .icons {
+    margin-right: 5px;
+  }
+  @include max-screen($media-ip6p) {
+    .footer {
+      padding: $gap-normal $gap-small;
+    }
   }
 </style>
