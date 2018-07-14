@@ -15,7 +15,7 @@
       <img :src="member.avatar" :alt="member.name" class="avatar">
       <h3>{{ member.name }}</h3>
       <ul>
-        <li v-for="tag in member.tags">{{ `#${tag}` }}</li>
+        <li v-for="(tag, index) in member.tags" :key="index">{{ tag }}</li>
       </ul>
       <p>{{ member.description }}</p>
       <nav>
@@ -109,7 +109,7 @@ export default class TheMember extends Vue {
       }
     }
   }
-  @include max-screen($media-ip6p) {
+  @include max-screen($media-ip6p-rotate) {
     .main::after {
       display: none;
     }

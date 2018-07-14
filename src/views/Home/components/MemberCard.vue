@@ -1,14 +1,14 @@
 <template>
-  <article class="memeber-card">
+  <a class="memeber-card" :href="member.home || member.github" target="_blank">
     <img :src="member.avatar" :alt="member.name" class="avatar">
     <section class="content">
       <h4>{{ member.name }}</h4>
       <p>{{ member.description }}</p>
     </section>
     <ul class="tags">
-      <li>{{ `#${member.tags[0]}` }}</li>
+      <li>#{{ member.tags[0] }}</li>
     </ul>
-  </article>
+  </a>
 </template>
 
 <script lang="ts">
