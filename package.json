@@ -15,15 +15,15 @@
   "commitplease": {
     "nohook": true,
     "components": [
-      "\\[Feat\\]",
-      "\\[Fix\\]",
-      "\\[Docs\\]",
-      "\\[Style\\]",
-      "\\[Refactor\\]",
-      "\\[Test\\]",
-      "\\[Chore\\]",
-      "\\[Wip\\]",
-      "\\[Conf\\]"
+      "Feat",
+      "Fix",
+      "Docs",
+      "Style",
+      "Refactor",
+      "Test",
+      "Chore",
+      "Wip",
+      "Conf"
     ]
   },
   "lint-staged": {
