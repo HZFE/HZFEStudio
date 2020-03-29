@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"function _inheritsLoose(subClass, superClass) {\n  subClass.prototype = Object.create(superClass.prototype);\n  subClass.prototype.constructor = subClass;\n  subClass.__proto__ = superClass;\n}\n\nmodule.exports = _inheritsLoose;"},"hash":"65adae10cc49a3fd01aa6db3cbf0d62b"}

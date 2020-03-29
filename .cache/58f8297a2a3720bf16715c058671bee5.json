@@ -1,0 +1,1 @@
+{"dependencies":[{"name":"./cjs/history.min.js","loc":{"line":4,"column":27}},{"name":"./cjs/history.js","loc":{"line":6,"column":27}}],"generated":{"js":"'use strict';\n\nif (\"development\" === 'production') {\n  module.exports = require('./cjs/history.min.js');\n} else {\n  module.exports = require('./cjs/history.js');\n}"},"hash":"f94c3289ebee80f27c5f6c2556a62ef0"}

@@ -8,7 +8,7 @@ import {
   useHistory,
 } from 'react-router-dom';
 
-const Home = lazy(() => import(/* webpackChunkName: "words" */ './home'));
+import Home from './home';
 
 interface IMainCtx {}
 export const MainCtx = React.createContext<IMainCtx>({});
@@ -26,8 +26,8 @@ export default () => {
         <Suspense fallback="Loading...">
           <HashRouter>
             <Switch>
-              <Route path="/words" component={Words} />
-              <Redirect from='/' to='/words' />
+              <Route path="/home" component={Home} />
+              <Redirect from='/' to='/home' />
             </Switch>
           </HashRouter>
         </Suspense>
