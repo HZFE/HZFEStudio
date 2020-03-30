@@ -1,6 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 
 import App from './pages';
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+function renderApp() {
+  render(<App />, document.querySelector('#app'));
+}
+
+renderApp();
+
+// @ts-ignore
+module.hot.accept();

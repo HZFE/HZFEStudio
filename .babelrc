@@ -1,9 +1,7 @@
 {
-  "presets": [
-    ["env", {
-      "modules": false
-    }],
-    "stage-2"
-  ],
-  "plugins": ["transform-runtime"]
+  "presets": ["env"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "transform-class-properties"
+  ]
 }

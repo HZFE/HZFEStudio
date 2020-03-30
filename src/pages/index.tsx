@@ -7,13 +7,15 @@ import {
   Redirect,
   useHistory,
 } from 'react-router-dom';
+import {hot} from "react-hot-loader"
 
 import Home from './home';
 
 interface IMainCtx {}
+
 export const MainCtx = React.createContext<IMainCtx>({});
 
-export default () => {
+const App = () => {
   const [loading, setLoading] = useState(true);
   const [globalError, setGlobalError] = useState(false);
 
@@ -35,3 +37,6 @@ export default () => {
     </div>
   )
 };
+
+// @ts-ignore
+export default App;
