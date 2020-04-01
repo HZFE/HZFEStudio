@@ -14,6 +14,7 @@ module.exports = {
   },
   // https://github.com/standard/standard/blob/master/docs/RULES-en.md
   extends: [
+    "airbnb",
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
@@ -30,6 +31,12 @@ module.exports = {
   'rules': {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": ['error', 'never', {ignorePackages: true} ],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".jsx"] }],
     'react/display-name': 'off',
     "react/jsx-no-duplicate-props": "error",
     "react/no-direct-mutation-state": "error",
@@ -42,6 +49,7 @@ module.exports = {
         "afterOpening": "never"
       }
     ],
+    "react/prop-types": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "@typescript-eslint/indent": ['error', 2],

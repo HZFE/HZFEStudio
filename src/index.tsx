@@ -9,5 +9,6 @@ function renderApp() {
 
 renderApp();
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
 module.hot.accept();

@@ -1,16 +1,12 @@
-import React, { useEffect, useContext, useState } from 'react';
+import React from 'react';
+
 import './index.pcss';
-import { MainCtx } from '..';
-import config from '../../config';
+import Header from '../../components/Header';
+import HeroHeader from '../../components/HeroHeader';
 
-export default () => {
-  const [list, setList] = useState([]);
-  const ctx = useContext(MainCtx);
-
-  useEffect(() => {
-  }, []);
-
-  return (
-    <div>12322</div>
-  );
-}
+export default () => (
+  <div>
+    <Header />
+    <HeroHeader />
+  </div>
+);

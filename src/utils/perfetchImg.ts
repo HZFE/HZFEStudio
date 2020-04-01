@@ -1,9 +1,9 @@
-export default function perfetchImg (src: string | string[]) {
+export default function perfetchImg(src: string | string[]) {
   const allSrc = Array.isArray(src) ? src : [src];
   setTimeout(() => {
-    allSrc.forEach(s => {
+    allSrc.forEach((s) => {
       const img = new Image();
       img.src = s;
-    })
+    });
   }, 0);
 }
