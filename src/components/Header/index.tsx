@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Menu from './Menu';
+import { wrapper } from '../../utils/styled';
 
 const Wrapper = styled.header`
   width: 100%;
@@ -11,10 +12,9 @@ const Wrapper = styled.header`
 `;
 
 const Container = styled.div`
-  max-width: 1440px;
+  ${wrapper()}
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
