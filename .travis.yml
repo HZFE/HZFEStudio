@@ -6,7 +6,7 @@ cache:
     - node_modules
 branches:
   only:
-    - master
+    - next
 install:
     - yarn install
 script:
@@ -16,6 +16,6 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   on:
-    branch: master
+    branch: next
   local_dir: dist
   target_branch: gh-pages
