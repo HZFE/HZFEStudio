@@ -1,9 +1,9 @@
 <template>
   <main class="home">
     <TheFirstScreen/>
+    <TheAboutUs/>
     <TheMember/>
     <TheWorks/>
-    <TheAboutUs/>
     <TheFooter/>
   </main>
 </template>
